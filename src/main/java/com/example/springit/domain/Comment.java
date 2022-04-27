@@ -3,7 +3,7 @@ package com.example.springit.domain;
 import javax.persistence.*;
 
 @Entity
-public class Comment {
+public class Comment extends Auditable {
     @Id
     @GeneratedValue
     private Long id;

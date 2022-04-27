@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Link {
+public class Link extends Auditable {
     @Id
     @GeneratedValue
     private Long id;
