@@ -1,8 +1,6 @@
 package com.example.springit.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Comment {
@@ -11,4 +9,6 @@ public class Comment {
     private Long id;
     private String body;
     private int vote;
+    @ManyToOne
+    private Link link;
 }
